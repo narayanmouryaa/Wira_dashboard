@@ -9,7 +9,7 @@ function Career() {
         <Navbar/>
         <center>
     <div className="career_container">
-      <center>
+      <center> 
         <h1 className="career-h1">Career</h1>
       </center>
       <center>
