@@ -3,6 +3,7 @@ import Header from "../../Layout/Header"
 import {Container ,Row,Col,Card} from "react-bootstrap";
 import aboutus from "../../Aseset/image/aboutus.png";
 import wiraa from "../../Aseset/image/wiraa.jpg"
+import Accountfootor from "../../Layout/Accountfooter";
 function Aboutus(){
     return (
         <>
@@ -21,7 +22,7 @@ function Aboutus(){
                         <img src={aboutus} className='mt-5' alt="" style={{width:'-webkit-fill-available'}} />
                     </Col>
                 </Row>
-                <Row style={{marginTop:'50px'}}>
+                <Row style={{marginTop:'50px',marginBottom:'50px'}}>
                     <Col sm={6}>
                         <img src={wiraa} alt="" style={{width:'-webkit-fill-available'}} />
                     </Col>
@@ -33,15 +34,17 @@ function Aboutus(){
                          </div>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                 <Col sm={4}>
                     <Card>
                         <h1>Our Mission</h1>
                         <p>To bring clients and professionals together from around the globe to get work done.</p>
                     </Card>
                 </Col>
-            </Row>
+            </Row> */}
+            
             </Container>
+            <Accountfootor/>
         </>
 
 )}

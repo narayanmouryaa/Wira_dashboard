@@ -2,6 +2,7 @@ import React from 'react';
 import '../../Aseset/css/career.css'; // Import your CSS file if you have one
 import Image1 from "../../Aseset/image/aboutus.png"
 import Navbar from '../../Layout/Header';
+import Accountfootor from '../../Layout/Accountfooter';
 
 function Career() {
     return (
@@ -67,6 +68,8 @@ function Career() {
         <b> Drop us a Mail </b>: hello@wiraa.com
       </h4>
     </center>
+
+    <Accountfootor/>
 
     </>
     );

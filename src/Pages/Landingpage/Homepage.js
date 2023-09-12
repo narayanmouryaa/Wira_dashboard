@@ -25,6 +25,7 @@ import connect from "../../Aseset/image/connect.png";
 import negotiate from "../../Aseset/image/negotiate.png";
 import verified from "../../Aseset/image/verified.png";
 import { Link } from "react-router-dom";
+// import WiraaStartup from './Wiraastartup';
 // import { Box } from 'react-bootstrap-icons';
 function Homepage() {
   return (
@@ -83,7 +84,7 @@ function Homepage() {
         <Container className='mt-5'>
           <Row className='pt-5'>
             <Col sm={4} style={{marginTop:'65px'}} > <h3 className='header' >Hire top talents from  <span style={{ color: '#008080' }}>anywhere</span> </h3>
-              <p className='subheader' >We’re available on Android devices and platforms.
+              <p className='subheader' style={{backgroundColor:'ButtonHighlight'}} >We’re available on Android devices and platforms.
               </p>
             </Col>
             <Col sm={3}><center><img src={Picture10} alt="" style={{ width: '82%',marginTop:'50px',marginLeft:'20px' }} /></center></Col>
@@ -221,9 +222,9 @@ function Homepage() {
             <Col sm={5} className=' mt-5' >
               <center>
                 <h3>Ready to start your project?</h3>
-                <p>Be a part of a global professional community, make friends, work independently, run your own business and choose your own clients and projects.</p>
+                <p className='startproject_p'>Be a part of a global professional community, make friends, work independently, run your own business and choose your own clients and projects.</p>
                 <br />
-                <p>Join us today and discover the freedom, flexibility, and fulfilment that come with freelancing.
+                <p  className='startproject_p'>Join us today and discover the freedom, flexibility, and fulfilment that come with freelancing.
                 </p>
                 <br /><br /><br /><br />
                 <button className=''>Live your passion</button>
@@ -232,7 +233,11 @@ function Homepage() {
             <Col sm={1}></Col>
           </Row>
         </Container>
+
+
       </section>
+
+      {/* <WiraaStartup/> */}
     </>
   )
 }

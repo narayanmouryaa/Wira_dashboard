@@ -1,87 +1,33 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+// import { Container, Row, Col } from 'react-bootstrap';
 import Wiraalogo from "../Aseset/image/Wiraalogo.png"
 import { Link } from 'react-router-dom';
+// import React from 'react';
+// import '../Aseset/css/Accountfootor.css' ;
+import "../Aseset/css/accountfooter.css";
+
 
 function Accountfootor() {
     return (
         <>
             {/* <section style={{ backgroundColor: 'ButtonHighlight', display: 'flex', alignItems: 'center' }}> */}
-                {/* <Container > */}
+            {/* <Container > */}
 
 
 
-                
-                {/* <p className='text-light footertext mb-5'>Connect With Experts</p> */}
 
-                {/* <div style={{display:'flex',justifyContent:'center',backgroundColor:'pink',marginLeft:'60px'}}>
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>About Us</p></Link>
-                            </ol>
-                            
-                        </ul>
-                    
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Terms & Conditin</p></Link>
-                            </ol>
-                            
-                        </ul>
-                   
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Privacy Policy</p></Link>
-                            </ol>
-                            
-                        </ul>
-                   
-                        <ul >                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Client Agreement</p></Link>
-                            </ol>
-                            
-                        </ul>
-                    
-                    
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Professional Agreement</p></Link>
-                            </ol>
-                            
-                        </ul>
-                    
-                    
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Blog.</p></Link>
-                            </ol>
-                            
-                        </ul>
-                    
-                  
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Career</p></Link>
-                            </ol>
-                            
-                        </ul>
-                    
-                    
-                        <ul>                            
-                            <ol className='text-light'>
-                                <Link to='/About Us'> <p>Contact</p></Link>
-                            </ol>
-                            
-                        </ul>
+            {/* <p className='text-light footertext mb-5'>Connect With Experts</p> */}
 
-                        </div> */}
 
-                <footer class="bg-light text-center text-lg-start">
+            {/* <footer class="bg-light  text-lg-start">
               
-                    {/* <!-- Copyright --> */}
-                    <div class="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)",display:'flex'}}> 
-                     <img style={{ height: '20px', marginLeft: '30px',float:'left' }} src={Wiraalogo} alt=""  />
+                    
+                    <div class="Accountfooter  p-3"
+                     style={{backgroundColor: "rgba(0, 0, 0, 0.2)",display:'flex'}}
+                     > 
+                     <img 
+                     style={{ height: '20px', marginLeft: '30px',float:'left' }}
+                      src={Wiraalogo} alt=""  />
                         © 2023
 
                         <div className='Account_footer' style={{display:'flex',alignItems:'center',justifyContent:'space-around',width:'80vw',height:'5vh'}}>
@@ -94,12 +40,12 @@ function Accountfootor() {
                         <Link to='/Career'> <p>Career</p></Link>
                         <Link to='/About Us'> <p>Contact</p></Link>
                         </div>
-                        {/* <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a> */}
+                       
                     </div>
-                    {/* <!-- Copyright --> */}
-                </footer>
+                   
+                </footer> */}
 
-                {/* <Col sm={2} xs={6}>
+            {/* <Col sm={2} xs={6}>
                         <ul className='footerul1' >
                             <ol className='text-light'>
                                 <p>Career</p>
@@ -115,7 +61,7 @@ function Accountfootor() {
                             </ol>
                         </ul>
                     </Col> */}
-                {/* <Col sm={3} xs={12}>
+            {/* <Col sm={3} xs={12}>
                         <h5 className='text-light'>Follow Us</h5>
                             <ul className='footerul footerul1 mt-4'>
                                 <ol className='text-light'>
@@ -138,8 +84,35 @@ function Accountfootor() {
                     </Col> */}
 
 
-                {/* </Container> */}
+            {/* </Container> */}
             {/* </section> */}
+
+
+
+
+
+
+            <footer className="Account_footer d-flex ">
+                <div className="container">
+                    <div className="row">
+
+                        <div className=" Account_footercontent col-md-12 col-sm-12" > {/* Center the content */}
+                        <Link to='/'><img src={Wiraalogo} alt="LOGO" /></Link>
+                            
+                            <p>@2023</p>
+                            <Link to='/About Us'><p>About Us</p></Link>
+                            <Link to='/About Us'><p>Terms & Conditions</p></Link>
+                            <Link to='/PrivacyPolicy'><p>Privacy Policy</p></Link>
+                            <Link to='/UserAgreement'><p>Client Agreement</p></Link>
+                            <Link to='/ProfessionalServiceAgreement'><p>Professional Agreement</p></Link>
+                            <Link to='/About Us'><p>Blog</p></Link>
+                            <Link to='/Career'><p>Career</p></Link>
+                            <Link to='/ContactComponent'><p>Contact</p></Link>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </>
     )
 }

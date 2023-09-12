@@ -12,8 +12,8 @@ function Navbar() {
         </div>
         <div className="navbar-right">
          
-          <Link to='/learn'className=" learn"><b>Learn</b></Link>
-          <Link to='/learn'className=" startup"><b>Startup</b></Link>
+          <Link to='/learn'className="learn"><b>Learn</b></Link>
+          <Link to='/Wiraastartup'className="startup"><b>Startup</b></Link>
           <Link to='/Account/login'><button className="navbar-button login"><b>Login</b></button></Link>
           <Link to="/Account/singup"><button className="navbar-button join"><b>Signup</b></button></Link>
         </div>
@@ -22,4 +22,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -26,22 +26,36 @@ function Footor() {
                             <ol className='text-light'>
                                 <p>Blog</p>
                             </ol>
+                            <ol className='text-light'>
+                                <Link to='/ProfessionalServiceAgreement'><p>Professional Agreement</p></Link>
+                                
+                            </ol>
+
                         </ul>
                     </Col>
                     <Col sm={2} xs={6}>
                         <ul className='footerul1' >
                             <ol className='text-light'>
-                                <p>Career</p>
+                                <Link to='/Career'><p>Career</p></Link>
+                                
                             </ol>
                             <ol className='text-light'>
-                                <p>Contact</p>
+                                <Link to='/ContactComponent'><p>Contact</p></Link>
+                                
                             </ol>
                             <ol className='text-light'>
-                                <p>Privacy</p>
+                                <Link to='/PrivacyPolicy'><p>Privacy Policy</p> </Link>
+                                
                             </ol>
                             <ol className='text-light'>
-                                <p>Terms</p>
+                                <p>Terms & Conditions</p>
                             </ol>
+
+                            <ol className='text-light'>
+                                <Link to='/UserAgreement'> <p>Client Agreement</p></Link>
+                               
+                            </ol>
+
                         </ul>
                     </Col>
                     <Col sm={3} xs={12}>

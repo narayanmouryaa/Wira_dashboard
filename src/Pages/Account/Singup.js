@@ -3,7 +3,9 @@ import { Container, Row, Col,Card,Form } from 'react-bootstrap'
 import '../../Aseset/css/account.css'
 import Auth from '../../Model/Auth.model';
 import { Link } from "react-router-dom";
-import Accountfootor from '../../Layout/Accountfooter';
+import { TextField } from '@mui/material';
+import wirralogo from '../../Aseset/image/Wiraalogo.png';
+import Accountfooter from '../../Layout/Accountfooter'
 function Singup() {
   
     const [formData, setFormData] = useState({
@@ -40,63 +42,32 @@ function Singup() {
               </Col>
               <Col sm={6} className='signup mb-4 mt-5'>
                     
-                    <Card className='shadow-3 '>
-                        <h2 className='text-center m-5'>Join Now</h2>
-                        <div className='m-3'>
+               <center><img src={wirralogo} alt="" className="mb-4" /></center>
+                 <Card className='shadow-3 ' >
+                        <h2 style={{marginTop:"20px",marginLeft:"50px"}}>Sign up</h2>
+                        <span style={{marginLeft:'50px',marginTop:'-5px',color:'#008080',fontWeight:'500'}}>Sign up & connect with the people who can help</span>
+                        <div className='m-5'>
                             <Form onSubmit={handleSubmit}>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>First Name</Form.Label>
-                                    <Form.Control type="text" placeholder="First Name" 
-                                    value={formData.fname}
-                                    name='firstName'
-                                    onChange={handleInputChange}
-                                    />
+                            <TextField id="outlined-basic" label=" First Name" fullWidth  placeholder=" Your First Name"  variant="outlined" size='small'  />
+                            <TextField id="outlined-basic" className='mt-3' label=" Last Name" fullWidth  placeholder=" Your Last Name"  variant="outlined" size='small'  />
+                            <TextField id="outlined-basic"  className='mt-3' label=" Email Id" fullWidth  placeholder=" Your  Email Id"  variant="outlined" size='small'  />
+                            <TextField id="outlined-basic"  className='mt-3' label=" Password" fullWidth  placeholder=" Your Password(6+characters)"  variant="outlined" size='small'  />
 
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Last Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Last Name"
-                                     value={formData.lname}
-                                     name='lastName'
-                                     onChange={handleInputChange}
-                                    />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Phone No / Email Id</Form.Label>
-                                    <Form.Control type="text" placeholder="Phone No / Email Id" 
-                                     value={formData.contactNumber}
-                                     onChange={handleInputChange}
-                                     name='contactNumber'
-                                    />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Password"
-                                     value={formData.password}
-                                     onChange={handleInputChange}
-                                     name='password'
-                                    />
-                                </Form.Group>
                                 
-                                <button type='submit' className='conatct-button mt-3' style={{width: "-webkit-fill-available"}}><b>CREATE ACCOUNT</b></button>
-                                <p  className='text-disable text-center small mt-2'>By clicking create account, you agree to our Terms, Data Policy and Cookie Policy</p>
+                                
+                                <button type='submit' className='mt-3 btn' style={{width: "-webkit-fill-available" ,backgroundColor:"#008080" ,color:'white'}}><b>CREATE ACCOUNT</b></button>
+                                <p  className='text-disable text-center small mt-2'><input type='checkbox' style={{marginRight:'10px'}} />Yes, I understand and agree to Wiraa Terms and Privacy Policy</p>
                                 <h6 className='text-center'> <b>Already a member?  <u><Link to='/Account/login'><span className='text-primary' style={{cursor:"default"}}>Login</span></Link></u></b></h6>
                             </Form>
                         </div>
                     </Card>
+                
                 </Col>
                 <Col sm={3}> 
               </Col>
             </Row>
-            
         </Container>
-
-
-        <div style={{ position: 'fixed',bottom: '0px',left:'0px',right: '0px',marginBottom: '0px'}}><Accountfootor/></div>
-
-
-        
-
+        <Accountfooter/>
     </div>
   )
 }

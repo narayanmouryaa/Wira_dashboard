@@ -44,6 +44,13 @@ import Affiliate from './Pages/Affiliations/Affiliate';
 import SwitchAccountt from './Pages/Account/switch';
 import FreeProDetails from './Pages/freelancerdashboard/FreeProject';
 import Career from './Pages/unguarded_page/career';
+import WiraaStartup from './Pages/Landingpage/Wiraastartup';
+import './App.css';
+import PrivacyPolicy from './Pages/unguarded_page/Privacypolicy';
+import ContactComponent from './Pages/unguarded_page/AccfooContactus';
+import ProfessionalServiceAgreement from './Pages/unguarded_page/ProfessionalAgreement';
+import UserAgreement from './Pages/unguarded_page/UserAgreement';
+
 function App() {
   return (
     <>
@@ -64,6 +71,12 @@ function App() {
               <Route path='/Profiledetails' element={<Profiledetails/>}/>
               <Route path='/About Us' element={<Aboutus/>}/>
               <Route path='/Career' element={<Career/>}/>
+              <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
+              <Route path='/ContactComponent' element={<ContactComponent/>}/>
+              <Route path='/ProfessionalServiceAgreement' element={<ProfessionalServiceAgreement/>}/>
+              <Route path='/UserAgreement' element={<UserAgreement/>}/>
+
+
             {/* User-Dashborad link */}
               <Route path='/user/dashboard' element={<Dashboard/>}/>
             {/* Order page link*/}
@@ -102,6 +115,7 @@ function App() {
               <Route path='/Switchacc' element={<SwitchAccountt/>}/>
               {/* Freelancer */}
               <Route path='/ProProjectDetails' element={<FreeProDetails/>}/>
+              <Route path='/Wiraastartup' element={<WiraaStartup/>}/>
         </Routes> 
       </Router> 
     </>
