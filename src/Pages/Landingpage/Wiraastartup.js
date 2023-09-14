@@ -31,7 +31,7 @@ function WiraaStartup() {
             <div className="page">
                 <Navbar />
                 <Container>
-                    <Row>
+                     <Row>
                         <Col md={6}>
                             <div className="text-content">
                                 <h1 className='wiraastartup_h1' >IT Solutions for Startups</h1>
